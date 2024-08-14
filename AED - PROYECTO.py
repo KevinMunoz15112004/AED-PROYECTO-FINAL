@@ -88,7 +88,7 @@ def limpiar_campos():
 
 def generar_factura():
     if not validar_campos():
-        return
+        return False
 
     datos_factura = {
         "numero_factura": f"{random.randint(1, 9999):04d}",
